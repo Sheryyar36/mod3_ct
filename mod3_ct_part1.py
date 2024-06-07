@@ -11,10 +11,10 @@ for i in menu:
 
 def order():
     ordering = True
-    ordered = ['burger']
+    ordered = []
 
     while ordering:
-        ordered.append(input('\nWhat would you like on your burger? (type "end" to end order)'))
+        ordered.append(input('\nWhat would you like to order? (type "end" to end order)'))
         if (ordered[len(ordered) - 1]) not in menu and ((ordered[len(ordered) - 1]) != 'end'):
             ordered.pop(len(ordered) - 1)
             print('That is not on the menu, please try again.')
